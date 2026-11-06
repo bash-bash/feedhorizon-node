@@ -1,5 +1,7 @@
 # FeedHorizon Node.js SDK
 
+[![npm](https://img.shields.io/npm/v/@feedhorizon/sdk)](https://www.npmjs.com/package/@feedhorizon/sdk) [![CI](https://github.com/bash-bash/feedhorizon-node/actions/workflows/ci.yml/badge.svg)](https://github.com/bash-bash/feedhorizon-node/actions/workflows/ci.yml)
+
 The official Node.js and TypeScript client for the [FeedHorizon API](https://feedhorizon.com/docs): schedule and publish posts on X, LinkedIn, Instagram, Bluesky, Pinterest and TikTok with one API.
 
 - Typed requests and responses, generated from the [OpenAPI spec](https://feedhorizon.com/openapi.json)
