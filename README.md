@@ -187,7 +187,7 @@ npm test
 npm run spec:update   # pull the latest OpenAPI spec and regenerate the types
 ```
 
-Releases are published to npm from GitHub releases (tag `vX.Y.Z`), with [provenance](https://docs.npmjs.com/generating-provenance-statements).
+To release, bump `version` in `package.json` (and `src/version.ts`) and add a CHANGELOG entry. When that lands on `main`, the Release workflow publishes to npm with trusted publishing and [provenance](https://docs.npmjs.com/generating-provenance-statements), then creates the `vX.Y.Z` tag and GitHub release.
 
 ## License
 
