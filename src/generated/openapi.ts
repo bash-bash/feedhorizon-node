@@ -6763,7 +6763,7 @@ export interface operations {
                     "application/json": components["schemas"]["Error"];
                 };
             };
-            /** @description Conflicts with the current state. Codes: `idempotency_request_in_progress`. See [Errors](/docs/api/errors). */
+            /** @description Conflicts with the current state. Codes: `account_limit_reached`, `idempotency_request_in_progress`. See [Errors](/docs/api/errors). */
             409: {
                 headers: {
                     [name: string]: unknown;
@@ -6772,10 +6772,10 @@ export interface operations {
                     /**
                      * @example {
                      *       "error": {
-                     *         "type": "idempotency_error",
-                     *         "code": "idempotency_request_in_progress",
-                     *         "message": "The first request with this key is still running. Retry in a few seconds",
-                     *         "docUrl": "https://feedhorizon.com/docs/api/errors#idempotency_error",
+                     *         "type": "conflict_error",
+                     *         "code": "account_limit_reached",
+                     *         "message": "The free plan's 2 social accounts are connected; start the paid plan to connect more",
+                     *         "docUrl": "https://feedhorizon.com/docs/api/errors#conflict_error",
                      *         "requestId": "req_m2x81a0kfd3h9s"
                      *       }
                      *     }
